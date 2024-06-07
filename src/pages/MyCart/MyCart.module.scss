@@ -1,0 +1,22 @@
+@import "../../global";
+.mycart {
+    flex-grow: 1;
+    &__container {
+        max-width: 1180px;
+        width: 100%;
+        margin: auto;
+        padding: 55px 0 55px;
+    }
+    &__title {
+        color: $color-text-catalog;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 55px;
+    }
+    &__infoContainer {
+        display: flex;
+        column-gap: 53px;
+    }
+}

@@ -1,0 +1,129 @@
+@import "../../global.scss";
+.cartCountButton {
+    display: flex;
+    height: 48px;
+    &_home {
+        &__count {
+            width: 62px;
+            margin: 0 8px 0 9px;
+        }
+
+        &__button {
+            width: 48px;
+
+            &:first-child::before {
+                width: 18px;
+                height: 3px;
+            }
+
+            &:last-child::before {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    &__count {
+        width: 73.273px;
+        margin: 0 9.45px 0 10.64px;
+        border-radius: 4px;
+        background: #f6f6f6;
+        padding: 15px 0;
+        color: $color-text-catalog;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    &__button {
+        border: none;
+        background: none;
+        background-color: $color-action-element;
+        border-radius: 4px;
+        width: 56.727px;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        &:first-child::before {
+            position: absolute;
+            content: "";
+            background-image: url("../../assets/images/cart__iconMinus.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 21.273px;
+            height: 3px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:last-child::before {
+            position: absolute;
+            content: "";
+            background-image: url("../../assets/images/cart__iconPlus.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 21.273px;
+            height: 18px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            @include hover-action-element;
+        }
+    }
+}
+.cartCountButtonHome {
+    display: flex;
+    height: 48px;
+    &__count {
+        width: 62px;
+        margin: 0 8px 0 9px;
+        border-radius: 4px;
+        background: #f6f6f6;
+        padding: 15px 0;
+        color: $color-text-catalog;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    &__button {
+        border: none;
+        background: none;
+        background-color: $color-action-element;
+        border-radius: 4px;
+        width: 48px;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        &:first-child::before {
+            position: absolute;
+            content: "";
+            background-image: url("../../assets/images/cart__iconMinus.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 3px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:last-child::before {
+            position: absolute;
+            content: "";
+            background-image: url("../../assets/images/cart__iconPlus.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            @include hover-action-element;
+        }
+    }
+}

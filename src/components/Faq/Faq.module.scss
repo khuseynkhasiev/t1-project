@@ -1,0 +1,19 @@
+@import "../../global";
+.faq {
+    width: 100%;
+    background-color: $color-bg-default;
+    padding: 35px 0 123px;
+    &__container {
+        max-width: 880px;
+        width: 100%;
+        margin: auto;
+    }
+    &__title {
+        color: $color-text-default;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 26px;
+    }
+}

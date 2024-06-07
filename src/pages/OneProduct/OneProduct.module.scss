@@ -1,0 +1,105 @@
+@import "../../global";
+.oneProduct {
+    flex-grow: 1;
+    padding: 55px 0 109px;
+    &__container {
+        max-width: 1180px;
+        width: 100%;
+        margin: auto;
+    }
+    &__title {
+        padding-bottom: 55px;
+        color: $color-text-catalog;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20.46px;
+    }
+    &__cardContainer {
+        display: flex;
+        column-gap: 42px;
+    }
+    &__imgsContainer {
+        display: flex;
+        column-gap: 20px;
+    }
+    &__imgTitle {
+        width: 520px;
+        object-fit: contain;
+    }
+    &__imgMini {
+        border-radius: 4px;
+        width: 70px;
+        height: 75.71px;
+        object-fit: contain;
+        &:first-of-type {
+            border: 3px solid #c4c4c4;
+            background: url(<path-to-image>) lightgray 0px -16.494px / 100% 143.571%
+                no-repeat;
+        }
+    }
+    &__info {
+        width: 100%;
+    }
+    &__titleContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name {
+        color: $color-text-catalog;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    &__skuId {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 164px;
+        color: $color-text-catalog;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        &_gray {
+            color: $color-text-product-key;
+            padding-right: 10px;
+        }
+    }
+    &__state {
+        padding: 48px 0 64px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+    }
+    &__stateItem {
+        display: flex;
+        column-gap: 10px;
+    }
+    &__itemKey {
+        color: $color-text-product-key;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__itemValue {
+        color: $color-text-catalog;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}

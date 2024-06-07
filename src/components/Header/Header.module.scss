@@ -1,0 +1,21 @@
+@import "../../global";
+.header {
+    width: 100%;
+    background: $color-bg-default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 15px 20px 0 20px;
+    &_paddingBottom {
+        padding: 21px 0 27px 0;
+    }
+    &__container {
+        max-width: 1180px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+    }
+}

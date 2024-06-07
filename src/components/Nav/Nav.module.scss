@@ -1,0 +1,80 @@
+@import "../../global";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logoText {
+        text-decoration: none;
+        color: $color-text-default;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 43px;
+        text-align: left;
+        margin: 0;
+        transition: all 0.5s ease;
+        &:hover {
+            @include hover-text-default;
+        }
+    }
+    &__items {
+        display: flex;
+        column-gap: 33px;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+        color: $color-text-default;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        transition: all 0.5s ease;
+        &:hover {
+            @include hover-text-default;
+        }
+    }
+    &__cartContainer {
+        display: flex;
+        column-gap: 6px;
+        width: 56.28px;
+        padding-right: 4.72px;
+    }
+    &__textCart {
+        margin: 0;
+    }
+    &__cartIcon {
+        background-image: url("../../assets/images/header__cart.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-width: 20px;
+        height: 18.3px;
+        position: relative;
+    }
+    &__cartCount {
+        position: absolute;
+        top: 12.2px;
+        left: 10.62px;
+        background-color: $color-action-element;
+        width: 12.38px;
+        height: 12.2px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__count {
+        color: $color-text-default;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 0;
+    }
+}

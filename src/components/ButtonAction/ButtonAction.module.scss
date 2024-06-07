@@ -1,0 +1,20 @@
+@import "../../global";
+.buttonAction {
+    padding: 22px 47px 22px 47px;
+    border-radius: 4px;
+    background: $color-action-element;
+    text-decoration: none;
+    color: $color-text-default;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    border: none;
+    min-width: 200px;
+    height: 67px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    &:hover {
+        @include hover-action-element;
+    }
+}
