@@ -1,11 +1,11 @@
-import Header from "./components/Header/Header";
 import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
-import styles from "./App.module.scss";
 import MyCart from "./pages/MyCart/MyCart";
 import NotFound from "./pages/NotFound/NotFound";
 import OneProduct from "./pages/OneProduct/OneProduct";
+import styles from "./App.module.scss";
 
 function App() {
     return (

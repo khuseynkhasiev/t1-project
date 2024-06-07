@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import { IFaq } from "../../interfaces/data";
 import LineWidth from "../LineWidth/LineWidth";
 import styles from "./FaqQuestion.module.scss";
 
-function FaqQuestion({ faq }: { faq: IFaq }) {
+const FaqQuestion = memo(({ faq }: { faq: IFaq }) => {
     const { question, answer } = faq;
     const [isHidden, setIsHidden] = useState(true);
 
-    const toogleAnswer = () => {
+    const toggleAnswer = () => {
         setIsHidden((prev) => !prev);
     };
 
@@ -17,16 +17,33 @@ function FaqQuestion({ faq }: { faq: IFaq }) {
             setIsHidden(false);
         }
     }, [faq]);
+
     return (
         <>
-            <li className={styles.faqQuestion} onClick={toogleAnswer}>
+            <li className={styles.faqQuestion} onClick={toggleAnswer}>
                 <div className={styles.faqQuestion__container}>
                     <p className={styles.faqQuestion__question}>{question}</p>
                     <button
                         className={`${styles.faqQuestion__btn} ${
                             isHidden ? "" : styles.faqQuestion__btn_open
                         }`}
-                    />
+                        aria-label="open or close answer"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            className={styles.faqQuestion__icon}
+                        >
+                            <path
+                                d="M12.5 0V25M0 12.5H25"
+                                stroke="white"
+                                strokeWidth="2"
+                            />
+                        </svg>
+                    </button>
                 </div>
                 <p
                     className={`${styles.faqQuestion__answer} ${
@@ -41,6 +58,6 @@ function FaqQuestion({ faq }: { faq: IFaq }) {
             <LineWidth color="rgb(255, 255, 255)" />
         </>
     );
-}
+});
 
 export default FaqQuestion;

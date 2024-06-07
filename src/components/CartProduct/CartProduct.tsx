@@ -1,9 +1,9 @@
-import styles from "./CartProduct.module.scss";
-import productImg from "../../assets/images/cartProduct__img.png";
-import CartCountButton from "../CartCountButton/CartCountButton";
 import { Link } from "react-router-dom";
 import { IProduct } from "../../interfaces/data";
+import CartCountButton from "../CartCountButton/CartCountButton";
 import productImage from "../../assets/images/product__img.png";
+import productImg from "../../assets/images/cartProduct__img.png";
+import styles from "./CartProduct.module.scss";
 
 // временно захоркожен
 const product: IProduct = {
@@ -27,9 +27,9 @@ function CartProduct() {
                     alt="Essence Mascara Lash Princess"
                 />
                 <div className={styles.cartProduct__info}>
-                    <p className={styles.cartProduct__name}>
+                    <h2 className={styles.cartProduct__name}>
                         Essence Mascara Lash Princess
-                    </p>
+                    </h2>
                     <p className={styles.cartProduct__price}>110 $ </p>
                 </div>
             </Link>

@@ -1,6 +1,6 @@
+import { IFaq } from "../../interfaces/data";
 import LineWidth from "../LineWidth/LineWidth";
 import FaqQuestion from "../FaqQuestion/FaqQuestion";
-import { IFaq } from "../../interfaces/data";
 import styles from "./Faq.module.scss";
 
 const faqData: IFaq[] = [

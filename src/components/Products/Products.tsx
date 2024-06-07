@@ -1,7 +1,7 @@
-import Product from "../Product/Product";
-import styles from "./Products.module.scss";
-import productImage from "../../assets/images/product__img.png";
 import { IProduct } from "../../interfaces/data";
+import Product from "../Product/Product";
+import productImage from "../../assets/images/product__img.png";
+import styles from "./Products.module.scss";
 
 const productsData: IProduct[] = [
     {

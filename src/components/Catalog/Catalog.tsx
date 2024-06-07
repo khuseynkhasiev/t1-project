@@ -7,7 +7,7 @@ function Catalog() {
     return (
         <section className={styles.catalog} id="catalog-id">
             <div className={styles.catalog__container}>
-                <p className={styles.catalog__title}>Catalog</p>
+                <h2 className={styles.catalog__title}>Catalog</h2>
                 <Search />
                 <Products />
                 <div className={styles.catalog__containerBtn}>
