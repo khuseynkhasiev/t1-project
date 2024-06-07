@@ -5,4 +5,13 @@
     background: #fff;
     max-width: 780px;
     width: 100%;
+    @media screen and (max-width: 1279px) {
+        padding: 28px;
+    }
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 28px 10px;
+    }
 }

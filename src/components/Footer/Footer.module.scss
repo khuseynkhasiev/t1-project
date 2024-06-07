@@ -5,13 +5,20 @@
     justify-content: center;
     width: 100%;
     background: rgb(68, 75, 88);
-    padding: 18px 0 19px;
+    padding: 18px 20px 19px 20px;
+    @media screen and (max-width: 767px) {
+        padding: 18px 10px 19px 10px;
+    }
     &__container {
         max-width: 1180px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: 767px) {
+            flex-direction: column-reverse;
+            row-gap: 10px;
+        }
     }
     &__items {
         display: flex;

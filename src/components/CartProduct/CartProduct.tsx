@@ -21,18 +21,16 @@ function CartProduct() {
                 to={`/one-product/${product.id}`}
                 state={{ product }}
             >
-                <div className={styles.cartProduct__card}>
-                    <img
-                        className={styles.cartProduct__img}
-                        src={productImg}
-                        alt="Essence Mascara Lash Princess"
-                    />
-                    <div className={styles.cartProduct__info}>
-                        <p className={styles.cartProduct__name}>
-                            Essence Mascara Lash Princess
-                        </p>
-                        <p className={styles.cartProduct__price}>110 $ </p>
-                    </div>
+                <img
+                    className={styles.cartProduct__img}
+                    src={productImg}
+                    alt="Essence Mascara Lash Princess"
+                />
+                <div className={styles.cartProduct__info}>
+                    <p className={styles.cartProduct__name}>
+                        Essence Mascara Lash Princess
+                    </p>
+                    <p className={styles.cartProduct__price}>110 $ </p>
                 </div>
             </Link>
             <CartCountButton page="" />

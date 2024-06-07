@@ -1,9 +1,15 @@
 @import "../../global";
 .catalog {
-    padding: 54px 0 60px 0;
-    max-width: 1180px;
-    width: 100%;
+    padding: 54px 20px 60px 20px;
     margin: auto;
+    @media screen and (max-width: 767px) {
+        padding: 20px 10px;
+    }
+    &__container {
+        max-width: 1180px;
+        width: 100%;
+        margin: auto;
+    }
     &__title {
         color: $color-text-catalog;
         font-family: Jost;
