@@ -1,6 +1,6 @@
 @import "../../global";
 .mycart {
-    flex-grow: 1;
+    // flex-grow: 1;
     padding: 0 20px;
     @media screen and (max-width: 767px) {
         padding: 0 10px;
@@ -9,7 +9,7 @@
         max-width: 1180px;
         width: 100%;
         margin: auto;
-        padding: 55px 0 55px;
+        padding: 55px 0 307px;
         @media screen and (max-width: 767px) {
             padding: 20px 0;
         }
