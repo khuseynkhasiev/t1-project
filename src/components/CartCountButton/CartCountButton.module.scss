@@ -36,6 +36,9 @@
         line-height: 140%;
     }
     &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: none;
         background: none;
         background-color: $color-action-element;
@@ -44,30 +47,6 @@
         position: relative;
         cursor: pointer;
         transition: background-color 0.5s ease;
-        &:first-child::before {
-            position: absolute;
-            content: "";
-            background-image: url("../../assets/images/cart__iconMinus.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 21.273px;
-            height: 3px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        &:last-child::before {
-            position: absolute;
-            content: "";
-            background-image: url("../../assets/images/cart__iconPlus.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 21.273px;
-            height: 18px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
         &:hover {
             @include hover-action-element;
         }
