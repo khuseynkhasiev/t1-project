@@ -1,10 +1,34 @@
-import { IProduct } from "../../interfaces/data";
+import { useEffect, useState, memo } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { IProduct } from "../../interfaces/data";
+import { RootState } from "../../store";
 import CartCountButton from "../CartCountButton/CartCountButton";
 import styles from "./Product.module.scss";
 
-function Product({ product }: { product: IProduct }) {
-    const { img, price, title, id } = product;
+const Product = memo(({ product }: { product: IProduct }) => {
+    const cart = useSelector((state: RootState) => state.cart);
+    const [productCart, setProductCart] = useState<{
+        id: number;
+        quantity: number;
+    } | null>(null);
+
+    const { images, price, title, id } = product;
+
+    useEffect(() => {
+        if (cart.products.length > 0) {
+            cart.products.forEach((item) => {
+                if (item.id === id) {
+                    setProductCart({
+                        id: item.id,
+                        quantity: item.quantity,
+                    });
+                }
+            });
+        } else {
+            setProductCart(null);
+        }
+    }, []);
 
     const addProductCart = (
         event: React.MouseEvent<HTMLButtonElement>
@@ -14,15 +38,11 @@ function Product({ product }: { product: IProduct }) {
 
     return (
         <li className={styles.product}>
-            <Link
-                className={styles.product__link}
-                to={`/one-product/${id}`}
-                state={{ product }}
-            >
+            <Link className={styles.product__link} to={`/one-product/${id}`}>
                 <div className={styles.product__imgWrap}>
                     <img
                         className={styles.product__img}
-                        src={img}
+                        src={images[0]}
                         alt={title}
                     />
                 </div>
@@ -31,8 +51,8 @@ function Product({ product }: { product: IProduct }) {
                         <h1 className={styles.product__name}>{title}</h1>
                         <p className={styles.product__price}>{price} $ </p>
                     </div>
-                    {id === 2 ? (
-                        <CartCountButton page="/" />
+                    {id === productCart?.id ? (
+                        <CartCountButton quantity={productCart.quantity} />
                     ) : (
                         <button
                             className={styles.product__btn}
@@ -62,6 +82,6 @@ function Product({ product }: { product: IProduct }) {
             </Link>
         </li>
     );
-}
+});
 
 export default Product;

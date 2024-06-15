@@ -4,4 +4,9 @@
     row-gap: 40px;
     column-gap: 35px;
     justify-items: center;
+    &__containerBtn {
+        padding-top: 58px;
+        display: flex;
+        justify-content: center;
+    }
 }

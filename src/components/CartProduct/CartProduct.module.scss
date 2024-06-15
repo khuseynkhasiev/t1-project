@@ -15,7 +15,8 @@
         align-items: center;
     }
     &__img {
-        width: 100px;
+        min-width: 100px;
+        max-width: 100px;
         height: 57px;
         object-fit: contain;
     }
@@ -30,7 +31,7 @@
     }
     &__link {
         cursor: pointer;
-        min-width: 362px;
+        width: 362px;
         display: flex;
         &:hover {
             .cartProduct__name {

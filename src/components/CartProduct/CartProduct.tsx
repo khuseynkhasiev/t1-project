@@ -1,19 +1,12 @@
+import { memo } from "react";
 import { Link } from "react-router-dom";
-import { IProduct } from "../../interfaces/data";
+import { ICartProduct } from "../../interfaces/data";
 import CartCountButton from "../CartCountButton/CartCountButton";
-import productImage from "../../assets/images/product__img.png";
-import productImg from "../../assets/images/cartProduct__img.png";
 import styles from "./CartProduct.module.scss";
 
-// временно захоркожен
-const product: IProduct = {
-    id: 1,
-    title: "Essence Mascara Lash Princess",
-    price: 110,
-    img: productImage,
-};
+const CartProduct = memo(({ product }: { product: ICartProduct }) => {
+    const { price, quantity, thumbnail, title } = product;
 
-function CartProduct() {
     return (
         <li className={styles.cartProduct}>
             <Link
@@ -23,20 +16,20 @@ function CartProduct() {
             >
                 <img
                     className={styles.cartProduct__img}
-                    src={productImg}
-                    alt="Essence Mascara Lash Princess"
+                    src={thumbnail}
+                    alt={title}
                 />
                 <div className={styles.cartProduct__info}>
-                    <h2 className={styles.cartProduct__name}>
-                        Essence Mascara Lash Princess
-                    </h2>
-                    <p className={styles.cartProduct__price}>110 $ </p>
+                    <h2 className={styles.cartProduct__name}>{title}</h2>
+                    <p className={styles.cartProduct__price}>
+                        {(price * quantity).toFixed(2)} $
+                    </p>
                 </div>
             </Link>
-            <CartCountButton page="" />
+            <CartCountButton quantity={quantity} />
             <button className={styles.cartProduct__delete}>Delete</button>
         </li>
     );
-}
+});
 
 export default CartProduct;

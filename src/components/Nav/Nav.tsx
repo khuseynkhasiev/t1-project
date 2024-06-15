@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
+import { useGetCartQuery } from "../../store/api/cartsApi";
 import styles from "./Nav.module.scss";
 
 function Nav() {
+    const { data: cart = {}, isError } = useGetCartQuery(1);
+
+    if (isError) {
+        console.error("Error loading the number of items in the cart");
+    }
     return (
         <nav className={styles.nav}>
             <Link to="/" className={styles.nav__logoText}>
@@ -23,9 +29,13 @@ function Nav() {
                         <div className={styles.nav__cartContainer}>
                             <p className={styles.nav__textCart}>Cart</p>
                             <div className={styles.nav__cartIcon}>
-                                <div className={styles.nav__cartCount}>
-                                    <p className={styles.nav__count}>1</p>
-                                </div>
+                                {Boolean(cart.totalProducts) && (
+                                    <div className={styles.nav__cartCount}>
+                                        <p className={styles.nav__count}>
+                                            {cart.totalProducts}
+                                        </p>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </Link>

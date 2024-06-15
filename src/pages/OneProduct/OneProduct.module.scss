@@ -1,6 +1,6 @@
 @import "../../global";
 .oneProduct {
-    // flex-grow: 1;
+    flex-grow: 1;
     padding: 55px 20px 109px 20px;
     @media screen and (max-width: 767px) {
         padding: 20px 10px 40px;
@@ -18,45 +18,12 @@
         font-weight: 700;
         line-height: normal;
     }
-    &__slider {
-        display: flex;
-        flex-direction: column;
-        row-gap: 20.46px;
-        @media screen and (max-width: 1023px) {
-            align-items: center;
-        }
-    }
     &__cardContainer {
         display: flex;
         column-gap: 42px;
         @media screen and (max-width: 1023px) {
             flex-direction: column;
             row-gap: 20px;
-        }
-    }
-    &__imgsContainer {
-        display: flex;
-        column-gap: 20px;
-        @media screen and (max-width: 767px) {
-            flex-wrap: wrap;
-            justify-content: center;
-            row-gap: 10px;
-        }
-    }
-    &__imgTitle {
-        max-width: 520px;
-        width: 100%;
-        object-fit: contain;
-    }
-    &__imgMini {
-        border-radius: 4px;
-        width: 70px;
-        height: 75.71px;
-        object-fit: contain;
-        &:first-of-type {
-            border: 3px solid #c4c4c4;
-            background: url(<path-to-image>) lightgray 0px -16.494px / 100% 143.571%
-                no-repeat;
         }
     }
     &__info {
@@ -99,29 +66,5 @@
             color: $color-text-product-key;
             padding-right: 10px;
         }
-    }
-    &__state {
-        padding: 48px 0 64px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 23px;
-    }
-    &__stateItem {
-        display: flex;
-        column-gap: 10px;
-    }
-    &__itemKey {
-        color: $color-text-product-key;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-    &__itemValue {
-        color: $color-text-catalog;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
     }
 }
