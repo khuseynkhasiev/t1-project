@@ -11,6 +11,7 @@ type ICartProductLink = Omit<
 const meta: Meta<typeof CartProductLink> = {
     title: "Atoms/CartProductLink",
     component: CartProductLink,
+    tags: ["autodocs"],
     decorators: [
         (Story) => (
             <Router>
@@ -32,22 +33,8 @@ const sampleProduct1: ICartProductLink = {
     title: "Sample Product 1",
 };
 
-const sampleProduct2: ICartProductLink = {
-    id: 2,
-    price: 20,
-    quantity: 1,
-    thumbnail: "https://via.placeholder.com/150",
-    title: "Sample Product 2",
-};
-
 export const Default: Story = {
     args: {
         product: sampleProduct1,
-    },
-};
-
-export const AnotherProduct: Story = {
-    args: {
-        product: sampleProduct2,
     },
 };

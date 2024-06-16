@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 const meta: Meta<typeof Nav> = {
     title: "Molecules/Nav",
     component: Nav,
+    tags: ["autodocs"],
     decorators: [
         (Story) => (
             <Provider store={store}>
@@ -22,6 +23,4 @@ export default meta;
 
 type Story = StoryObj<typeof Nav>;
 
-export const Default: Story = {
-    args: {},
-};
+export const Default: Story = {};

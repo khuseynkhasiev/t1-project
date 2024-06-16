@@ -4,6 +4,7 @@ import ProductRating from "./ProductRating";
 const meta: Meta = {
     title: "Atoms/ProductRating",
     component: ProductRating,
+    tags: ["autodocs"],
 };
 
 export default meta;

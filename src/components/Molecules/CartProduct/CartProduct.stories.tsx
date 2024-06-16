@@ -6,6 +6,7 @@ import { ICartProduct } from "../../../interfaces/data";
 const meta: Meta<typeof CartProduct> = {
     title: "Molecules/CartProduct",
     component: CartProduct,
+    tags: ["autodocs"],
     decorators: [
         (Story) => (
             <Router>
@@ -25,7 +26,7 @@ const sampleProduct1: ICartProduct = {
     total: 200,
     id: 1,
     price: 10,
-    quantity: 2,
+    quantity: 20,
     thumbnail: "https://via.placeholder.com/150",
     title: "Sample Product 1",
 };
@@ -41,13 +42,13 @@ const sampleProduct2: ICartProduct = {
     title: "Sample Product 2",
 };
 
-export const Default: Story = {
+export const Product1: Story = {
     args: {
         product: sampleProduct1,
     },
 };
 
-export const AnotherProduct: Story = {
+export const Product2: Story = {
     args: {
         product: sampleProduct2,
     },

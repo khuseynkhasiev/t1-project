@@ -5,6 +5,7 @@ import LogoLink from "./LogoLink";
 const meta: Meta = {
     title: "Atoms/LogoLink",
     component: LogoLink,
+    tags: ["autodocs"],
     decorators: [
         (Story) => (
             <Router>

@@ -4,18 +4,15 @@ import LineWidth from "./LineWidth";
 const meta: Meta<typeof LineWidth> = {
     title: "Atoms/LineWidth",
     component: LineWidth,
+    tags: ["autodocs"],
 };
 
 export default meta;
 
 type Story = StoryObj<typeof LineWidth>;
 
-type StoryArgs = {
-    color: string;
-};
-
-export const Default: Story = (args: StoryArgs) => <LineWidth {...args} />;
-
-Default.args = {
-    color: "blue",
+export const Default: Story = {
+    args: {
+        color: "blue",
+    },
 };

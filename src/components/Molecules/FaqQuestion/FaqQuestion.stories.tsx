@@ -4,13 +4,14 @@ import FaqQuestion from "./FaqQuestion";
 const meta: Meta = {
     title: "Molecules/FaqQuestion",
     component: FaqQuestion,
+    tags: ["autodocs"],
 };
 
 export default meta;
 
 type Story = StoryObj<typeof FaqQuestion>;
 
-export const Question1: Story = {
+export const AnswerOpen: Story = {
     args: {
         faq: {
             id: 1,
@@ -19,7 +20,7 @@ export const Question1: Story = {
         },
     },
 };
-export const Question2: Story = {
+export const AnswerClose: Story = {
     args: {
         faq: {
             id: 2,

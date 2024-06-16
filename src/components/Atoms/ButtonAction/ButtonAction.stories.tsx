@@ -2,10 +2,10 @@ import { Meta, StoryObj } from "@storybook/react";
 import { MemoryRouter } from "react-router-dom";
 import ButtonAction from "./ButtonAction";
 
-// Определение метаданных для компонента
 const meta: Meta = {
     title: "Atoms/ButtonAction",
     component: ButtonAction,
+    tags: ["autodocs"],
     decorators: [
         (Story) => (
             <MemoryRouter>
@@ -18,8 +18,6 @@ const meta: Meta = {
 export default meta;
 
 type Story = StoryObj<typeof ButtonAction>;
-
-// Определение историй
 
 export const AsLink: Story = {
     args: {
