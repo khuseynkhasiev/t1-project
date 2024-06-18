@@ -1,0 +1,17 @@
+$color-bg-default: #484283;
+
+$color-action-element: #f14f4f;
+$color-action-element-hover: #8c2828;
+$color-text-default: #fff;
+$color-text-default-hover: #c4c4c4;
+
+$color-text-catalog: #444b58;
+$color-text-product-key: #b2b5bb;
+
+@mixin hover-text-default() {
+    color: $color-text-default-hover;
+    text-decoration: underline;
+}
+@mixin hover-action-element() {
+    background-color: $color-action-element-hover;
+}

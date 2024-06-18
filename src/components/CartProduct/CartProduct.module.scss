@@ -1,0 +1,94 @@
+@import "../../global";
+
+.cartProduct {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    column-gap: 16px;
+    @media screen and (max-width: 767px) {
+        height: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+    &__img {
+        width: 100px;
+        height: 57px;
+        object-fit: contain;
+    }
+    &__info {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+        }
+    }
+    &__link {
+        cursor: pointer;
+        min-width: 362px;
+        display: flex;
+        &:hover {
+            .cartProduct__name {
+                text-decoration: underline;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            justify-content: space-between;
+            min-width: auto;
+            max-width: 362px;
+            width: 100%;
+        }
+        @media screen and (max-width: 400px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__name {
+        color: $color-text-catalog;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    &__price {
+        color: $color-text-catalog;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__delete {
+        padding: 0;
+        width: 59.28px;
+        border: none;
+        background: none;
+        color: #b2b5bb;
+        text-align: right;
+        font-family: Jost;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 26.18px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $color-text-catalog;
+            text-decoration-line: underline;
+        }
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}
