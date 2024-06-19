@@ -1,17 +1,17 @@
-import React from "react";
+import { ReactNode } from "react";
 import Header from "../../Organisms/Header/Header";
 import Footer from "../..//Organisms/Footer/Footer";
 import styles from "./MainTemplate.module.scss";
 
 type MainTemplateProps = {
-    children: React.ReactNode;
+    children: ReactNode;
 };
 
-const MainTemplate: React.FC<MainTemplateProps> = ({ children }) => {
+const MainTemplate = ({ children }: MainTemplateProps) => {
     return (
         <div className={styles.mainTemplate}>
             <Header />
-            <main className={styles.content}>{children}</main>
+            {children}
             <Footer />
         </div>
     );

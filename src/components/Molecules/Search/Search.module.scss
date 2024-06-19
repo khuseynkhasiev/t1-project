@@ -1,33 +1,8 @@
-@import "../../../global";
 .search {
     display: flex;
     column-gap: 20px;
     padding: 43.5px 0 40px;
     @media screen and (max-width: 767px) {
         column-gap: 5px;
-    }
-
-    &__input {
-        border-radius: 4px;
-        background: rgb(247, 247, 247);
-        width: 100%;
-        color: $color-text-catalog;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 140%;
-        letter-spacing: 0%;
-        text-align: left;
-        border: none;
-        padding: 21.22px 15.98px;
-        &::placeholder {
-            color: rgb(178, 181, 187);
-        }
-        &:focus {
-            outline: none;
-            border: none;
-        }
-        @media screen and (max-width: 767px) {
-            font-size: 12px;
-        }
     }
 }

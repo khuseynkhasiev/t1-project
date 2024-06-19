@@ -1,0 +1,29 @@
+@import "../../../global";
+.Input {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background: #f6f6f6;
+    color: $color-text-catalog;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    &::placeholder {
+        color: rgb(178, 181, 187);
+    }
+    &:focus {
+        outline: none;
+        border: none;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+    &_pdMedium {
+        padding: 21px 17px;
+    }
+    &_pdSmall {
+        padding: 21.22px 15.98px;
+    }
+}

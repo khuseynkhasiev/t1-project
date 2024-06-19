@@ -3,6 +3,7 @@ import Home from "./components/Pages/Home/Home";
 import MyCart from "./components/Pages/MyCart/MyCart";
 import NotFound from "./components/Pages/NotFound/NotFound";
 import OneProduct from "./components/Pages/OneProduct/OneProduct";
+import LogIn from "./components/Pages/LogIn/LogIn";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/one-product/:id" element={<OneProduct />}></Route>
             <Route path="/my-cart" element={<MyCart />}></Route>
+            <Route path="/login" element={<LogIn />}></Route>
             <Route path="*" element={<NotFound />}></Route>
         </Routes>
     );

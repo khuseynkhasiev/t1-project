@@ -4,6 +4,7 @@ import { IProduct } from "../../../interfaces/data";
 import ButtonAction from "../../Atoms/ButtonAction/ButtonAction";
 import useDebouncedFunction from "../../../hooks/useDebouncedFunction";
 import styles from "./Search.module.scss";
+import Input from "../../Atoms/Input/Input";
 
 interface SearchProps {
     onSearchResults: (data: IProduct[]) => void;
@@ -30,19 +31,23 @@ function Search({ onSearchResults, setLoading }: SearchProps) {
         1000
     );
 
-    const handleInputName = (event: ChangeEvent<HTMLInputElement>): void => {
-        setName(event.target.value);
-        debouncedGetSearchedProducts();
-    };
+    const handleInputName = useCallback(
+        (event: ChangeEvent<HTMLInputElement>): void => {
+            setName(event.target.value);
+            debouncedGetSearchedProducts();
+        },
+        [name, triggerSearchProducts]
+    );
 
     return (
         <div className={styles.search}>
-            <input
-                className={styles.search__input}
+            <Input
                 type="text"
                 placeholder="Search by title"
+                cls="Input_pdSmall"
+                name="login"
                 value={name}
-                onChange={handleInputName}
+                handleInput={handleInputName}
             />
             <ButtonAction
                 tag={"button"}

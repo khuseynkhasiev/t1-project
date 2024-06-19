@@ -20,40 +20,47 @@ const FaqQuestion = memo(({ faq }: { faq: IFaq }) => {
 
     return (
         <>
-            <li className={styles.faqQuestion} onClick={toggleAnswer}>
-                <div className={styles.faqQuestion__container}>
-                    <p className={styles.faqQuestion__question}>{question}</p>
-                    <button
-                        className={`${styles.faqQuestion__btn} ${
-                            isHidden ? "" : styles.faqQuestion__btn_open
-                        }`}
-                        aria-label="open or close answer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="25"
-                            height="25"
-                            viewBox="0 0 25 25"
-                            fill="none"
-                            className={styles.faqQuestion__icon}
-                        >
-                            <path
-                                d="M12.5 0V25M0 12.5H25"
-                                stroke="white"
-                                strokeWidth="2"
-                            />
-                        </svg>
-                    </button>
-                </div>
-                <p
-                    className={`${styles.faqQuestion__answer} ${
-                        isHidden
-                            ? styles.faqQuestion__answer_hidden
-                            : styles.faqQuestion__answer_visible
-                    }`}
+            <li className={styles.faqQuestion}>
+                <button
+                    className={styles.faqQuestion__btnLi}
+                    onClick={toggleAnswer}
                 >
-                    {answer}
-                </p>
+                    <div className={styles.faqQuestion__container}>
+                        <p className={styles.faqQuestion__question}>
+                            {question}
+                        </p>
+                        <button
+                            className={`${styles.faqQuestion__btn} ${
+                                isHidden ? "" : styles.faqQuestion__btn_open
+                            }`}
+                            aria-label="open or close answer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="25"
+                                viewBox="0 0 25 25"
+                                fill="none"
+                                className={styles.faqQuestion__icon}
+                            >
+                                <path
+                                    d="M12.5 0V25M0 12.5H25"
+                                    stroke="white"
+                                    strokeWidth="2"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <p
+                        className={`${styles.faqQuestion__answer} ${
+                            isHidden
+                                ? styles.faqQuestion__answer_hidden
+                                : styles.faqQuestion__answer_visible
+                        }`}
+                    >
+                        {answer}
+                    </p>
+                </button>
             </li>
             <LineWidth color="rgb(255, 255, 255)" />
         </>

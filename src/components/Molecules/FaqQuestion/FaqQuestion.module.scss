@@ -1,11 +1,16 @@
 @import "../../../global";
 .faqQuestion {
-    padding: 30px 0 0;
-    cursor: pointer;
     &:hover {
         .faqQuestion__question {
             @include hover-text-default;
         }
+    }
+    &__btnLi {
+        border: none;
+        background: none;
+        width: 100%;
+        padding: 30px 0 0;
+        cursor: pointer;
     }
     &__container {
         display: flex;
@@ -49,6 +54,7 @@
         font-weight: 600;
         line-height: 140%;
         transition: all 0.5s ease;
+        text-align: left;
         &_hidden {
             opacity: 0;
             height: 21px;
