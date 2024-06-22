@@ -4,7 +4,11 @@ import LineWidth from "../../Atoms/LineWidth/LineWidth";
 import Nav from "../../Molecules/Nav/Nav";
 import styles from "./Header.module.scss";
 
-const Header = memo(() => {
+interface HeaderProps {
+    loggedIn: boolean;
+}
+
+const Header = memo(({ loggedIn }: HeaderProps) => {
     const location = useLocation();
     const [isVisibleLine, setVisibleLine] = useState(true);
 
@@ -19,7 +23,7 @@ const Header = memo(() => {
             }`}
         >
             <div className={styles.header__container}>
-                <Nav />
+                <Nav loggedIn={loggedIn} />
                 {isVisibleLine && (
                     <LineWidth color="rgba(255, 255, 255, 0.5)" />
                 )}

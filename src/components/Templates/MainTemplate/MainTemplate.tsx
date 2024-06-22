@@ -9,8 +9,8 @@ type MainTemplateProps = {
 
 const MainTemplate = ({ children }: MainTemplateProps) => {
     return (
-        <div className={styles.mainTemplate}>
-            <Header />
+        <div className={styles.MainTemplate}>
+            <Header loggedIn={true} />
             {children}
             <Footer />
         </div>

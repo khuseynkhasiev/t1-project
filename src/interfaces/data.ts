@@ -70,4 +70,17 @@ export interface ICart {
     totalProducts: number;
     totalQuantity: number;
     userId: number;
+    isDeleted?: boolean;
+}
+
+export interface IUser {
+    email: string;
+    firstName: string;
+    gender: string;
+    id: number;
+    image: string;
+    lastName: string;
+    refreshToken: string;
+    token: string;
+    username: string;
 }

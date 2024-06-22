@@ -9,7 +9,7 @@ type LogInTemplateProps = {
 const LogInTemplate = ({ children }: LogInTemplateProps) => {
     return (
         <div className={styles.MainTemplate}>
-            <Header />
+            <Header loggedIn={false} />
             {children}
         </div>
     );

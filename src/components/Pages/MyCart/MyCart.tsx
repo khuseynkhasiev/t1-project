@@ -5,10 +5,46 @@ import CartPrice from "../../Atoms/CartPrice/CartPrice";
 import CartProducts from "../../Organisms/CartProducts/CartProducts";
 import styles from "./MyCart.module.scss";
 import MainTemplate from "../../Templates/MainTemplate/MainTemplate";
+import { useEffect, SetStateAction, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import * as api from "../../../api/api";
 
-function MyCart() {
-    const { data = [], isError, isLoading } = useGetCartQuery(1);
+interface MyCartProps {
+    setLoggedIn: React.Dispatch<SetStateAction<boolean>>;
+}
+
+function MyCart({ setLoggedIn }: MyCartProps) {
     const cart = useSelector((state: RootState) => state.cart);
+
+    const navigate = useNavigate();
+    const [isLoading, setIsLoading] = useState(true);
+    const [userId, setUserId] = useState<number | null>(null);
+    const [isDeleted, setIsDeleted] = useState(
+        cart.isDeleted === undefined ? false : cart.isDeleted
+    );
+
+    const { data, isError } = useGetCartQuery(userId!, {
+        skip: userId === null,
+    });
+
+    const getAuthorizedUser = () => {
+        setIsLoading(true);
+        const token = localStorage.getItem("token");
+        if (token) {
+            api.getActiveUser(token)
+                .then((user) => setUserId(user.id))
+                .catch((error) => {
+                    setLoggedIn(false);
+                    localStorage.removeItem("token");
+                    navigate("/login");
+                    console.error(error);
+                })
+                .finally(() => setIsLoading(false));
+        }
+    };
+    useEffect(() => {
+        getAuthorizedUser();
+    }, []);
 
     if (isLoading) {
         return (
@@ -36,12 +72,18 @@ function MyCart() {
                 <div className={styles.mycart__container}>
                     <h1 className={styles.mycart__title}>My cart</h1>
                     <div className={styles.mycart__infoContainer}>
-                        <CartProducts />
-                        <CartPrice
-                            totalPrice={cart.total}
-                            discountPrice={cart.discountedTotal}
-                            totalQuantity={cart.totalQuantity}
-                        />
+                        {isDeleted ? (
+                            <p>Cart empty</p>
+                        ) : (
+                            <>
+                                <CartProducts setIsDeleted={setIsDeleted} />
+                                <CartPrice
+                                    totalPrice={cart.total}
+                                    discountPrice={cart.discountedTotal}
+                                    totalQuantity={cart.totalQuantity}
+                                />
+                            </>
+                        )}
                     </div>
                 </div>
             </section>

@@ -18,7 +18,7 @@ const CartPrice = memo(
                 <li className={styles.cartPrice__item}>
                     <p className={styles.cartPrice__totalKey}>Total price:</p>
                     <p className={styles.cartPrice__totalValue}>
-                        {totalPrice}$
+                        {totalPrice.toFixed(2)}$
                     </p>
                 </li>
                 <li className={styles.cartPrice__item}>
@@ -26,7 +26,7 @@ const CartPrice = memo(
                         Total price with discount:
                     </p>
                     <p className={styles.cartPrice__discountValue}>
-                        {discountPrice}$
+                        {discountPrice.toFixed(2)}$
                     </p>
                 </li>
             </ul>

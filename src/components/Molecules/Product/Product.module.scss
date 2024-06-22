@@ -75,20 +75,4 @@
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
     }
-
-    &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 48px;
-        height: 48px;
-        border: none;
-        border-radius: 4px;
-        background: $color-action-element;
-        cursor: pointer;
-        transition: background-color 0.5s ease;
-        &:hover {
-            @include hover-action-element;
-        }
-    }
 }

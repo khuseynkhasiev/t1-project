@@ -1,10 +1,10 @@
-import { useGetProductsQuery } from "../../../store";
 import { IProduct } from "../../../interfaces/data";
 import { useState, useEffect } from "react";
 import Product from "../../Molecules/Product/Product";
 import Search from "../../Molecules/Search/Search";
 import ButtonAction from "../../Atoms/ButtonAction/ButtonAction";
 import styles from "./Products.module.scss";
+import { useGetProductsQuery } from "../../../store";
 
 function Products() {
     const [limitProducts, setLimitProducts] = useState<number>(9);
@@ -30,33 +30,6 @@ function Products() {
         setLimitProducts((prevLimit) => prevLimit + 9);
     };
 
-    if (isInitialLoading || isSearchLoading) {
-        return (
-            <>
-                <Search
-                    onSearchResults={handleSearchResults}
-                    setLoading={setIsSearchLoading}
-                    key="search-key"
-                />
-                <h1>Loading...</h1>
-            </>
-        );
-    }
-
-    if (isError) {
-        console.error("Error loading");
-        return (
-            <>
-                <Search
-                    onSearchResults={handleSearchResults}
-                    setLoading={setIsSearchLoading}
-                    key="search-key"
-                />
-                <h1>Error loading</h1>
-            </>
-        );
-    }
-
     return (
         <>
             <Search
@@ -64,18 +37,26 @@ function Products() {
                 setLoading={setIsSearchLoading}
                 key="search-key"
             />
-            <ul className={styles.products}>
-                {products.map((product: IProduct) => (
-                    <Product product={product} key={product.id} />
-                ))}
-            </ul>
-            <div className={styles.products__containerBtn}>
-                <ButtonAction
-                    tag="button"
-                    text="Show more"
-                    handleClickButton={handleShowMoreProducts}
-                />
-            </div>
+            {isInitialLoading || isSearchLoading ? (
+                <h1>Loading...</h1>
+            ) : isError ? (
+                <h1>Error loading</h1>
+            ) : (
+                <>
+                    <ul className={styles.products}>
+                        {products.map((product: IProduct) => (
+                            <Product product={product} key={product.id} />
+                        ))}
+                    </ul>
+                    <div className={styles.products__containerBtn}>
+                        <ButtonAction
+                            tag="button"
+                            text="Show more"
+                            handleClickButton={handleShowMoreProducts}
+                        />
+                    </div>
+                </>
+            )}
         </>
     );
 }

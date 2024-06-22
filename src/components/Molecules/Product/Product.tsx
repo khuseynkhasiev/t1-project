@@ -1,86 +1,117 @@
-import { useEffect, useState, memo } from "react";
-import { useSelector } from "react-redux";
+import { memo, useState } from "react";
 import { Link } from "react-router-dom";
 import { IProduct } from "../../../interfaces/data";
-import { RootState } from "../../../store";
 import CartCountButton from "../../Atoms/CartCountButton/CartCountButton";
 import styles from "./Product.module.scss";
-
+import ButtonAddProductCart from "../../Atoms/ButtonAddProductCart/ButtonAddProductCart";
+import { RootState } from "../../../store";
+import { useDispatch, useSelector } from "react-redux";
+import Loading from "../../Atoms/Loading/Loading";
+import { updateCart } from "../../../store/features/cartProductsSlice/cartProductsSlice";
+import * as api from "../../../api/api";
+import CartChangeError from "../../Atoms/CartChangeError/CartChangeError";
 const Product = memo(({ product }: { product: IProduct }) => {
+    const dispatch = useDispatch();
+    const cartProduct = useSelector((state: RootState) =>
+        state.cart.products.find((item) => item.id === product.id)
+    );
     const cart = useSelector((state: RootState) => state.cart);
-    const [productCart, setProductCart] = useState<{
-        id: number;
-        quantity: number;
-    } | null>(null);
+    const [isLoadingQuantity, setIsLoadingQuantity] = useState(false);
+    const [isErrorEditProductsCart, setIsErrorEditProductsCart] =
+        useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
-    const { images, price, title, id } = product;
+    const updateCartProducts = (newCart: any, id: number) => {
+        setIsLoadingQuantity(true);
+        api.updateCart(newCart, id)
+            .then((data) => {
+                dispatch(updateCart(data));
+            })
+            .catch((error) => {
+                setErrorMessage("Error changing carts");
+                setIsErrorEditProductsCart(true);
+                setTimeout(() => {
+                    setIsErrorEditProductsCart(false);
+                    setErrorMessage("");
+                }, 2000);
+                console.error(error);
+            })
+            .finally(() => setIsLoadingQuantity(false));
+    };
 
-    useEffect(() => {
-        if (cart.products.length > 0) {
-            cart.products.forEach((item) => {
-                if (item.id === id) {
-                    setProductCart({
-                        id: item.id,
-                        quantity: item.quantity,
-                    });
-                }
-            });
-        } else {
-            setProductCart(null);
-        }
-    }, []);
+    const deleteFullProductCart = (id: number) => {
+        const newCart = cart.products.filter((item) => {
+            return item.id !== id;
+        });
 
-    const addProductCart = (
-        event: React.MouseEvent<HTMLButtonElement>
-    ): void => {
-        event.preventDefault();
+        updateCartProducts(newCart, cart.id);
+    };
+
+    const incrementProductCart = (count: number) => {
+        const newCart = cart.products.map((item) => {
+            return item.id === product.id ? { ...item, quantity: count } : item;
+        });
+        updateCartProducts(newCart, cart.id);
+    };
+
+    const decrementProductCart = (count: number) => {
+        const newCart = cart.products.map((item) => {
+            return item.id === product.id ? { ...item, quantity: count } : item;
+        });
+        updateCartProducts(newCart, cart.id);
+    };
+
+    const addNewProductToCart = () => {
+        const newCart = [...cart.products, product];
+        updateCartProducts(newCart, cart.id);
     };
 
     return (
-        <li className={styles.product}>
-            <Link className={styles.product__link} to={`/one-product/${id}`}>
-                <div className={styles.product__imgWrap}>
-                    <img
-                        className={styles.product__img}
-                        src={images[0]}
-                        alt={title}
-                    />
-                </div>
-                <div className={styles.product__footer}>
-                    <div className={styles.product__info}>
-                        <h1 className={styles.product__name}>{title}</h1>
-                        <p className={styles.product__price}>{price} $ </p>
+        <>
+            {isErrorEditProductsCart && (
+                <CartChangeError errorMessage={errorMessage} />
+            )}
+            <li className={styles.product}>
+                <Link
+                    className={styles.product__link}
+                    to={`/one-product/${product.id}`}
+                >
+                    <div className={styles.product__imgWrap}>
+                        <img
+                            className={styles.product__img}
+                            src={product.images[0]}
+                            alt={product.title}
+                        />
                     </div>
-                    {id === productCart?.id ? (
-                        <CartCountButton quantity={productCart.quantity} />
-                    ) : (
-                        <button
-                            className={styles.product__btn}
-                            onClick={addProductCart}
-                            aria-label="Add in cart"
-                        >
-                            <svg
-                                aria-hidden="true"
-                                width="21.000000"
-                                height="19.300293"
-                                viewBox="0 0 20 18.3003"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <defs />
-                                <path
-                                    id="Vector"
-                                    d="M20 6.53L16.6 6.53L13.03 0.31C12.85 0 12.47 -0.1 12.17 0.09C11.88 0.27 11.78 0.68 11.96 0.98L15.14 6.53L4.85 6.53L8.03 0.98C8.21 0.68 8.11 0.27 7.82 0.09C7.52 -0.1 7.14 0 6.96 0.31L3.39 6.53L0 6.53L0 7.84L1.35 7.84L2.94 16.7C3.11 17.62 3.88 18.3 4.78 18.3L15.21 18.3C16.11 18.3 16.88 17.62 17.05 16.7L18.64 7.84L20 7.84C20 7.84 20 6.53 20 6.53ZM15.82 16.46C15.77 16.76 15.51 16.99 15.21 16.99L4.78 16.99C4.48 16.99 4.22 16.76 4.17 16.45L2.62 7.84L17.37 7.84L15.82 16.46Z"
-                                    fill="#FFFFFF"
-                                    fillOpacity="1.000000"
-                                    fillRule="nonzero"
-                                />
-                            </svg>
-                        </button>
-                    )}
-                </div>
-            </Link>
-        </li>
+                    <div className={styles.product__footer}>
+                        <div className={styles.product__info}>
+                            <h1 className={styles.product__name}>
+                                {product.title}
+                            </h1>
+                            <p className={styles.product__price}>
+                                {product.price} $
+                            </p>
+                        </div>
+                        {isLoadingQuantity ? (
+                            <Loading />
+                        ) : cartProduct ? (
+                            <CartCountButton
+                                stock={product.stock}
+                                id={product.id}
+                                incrementProductCart={incrementProductCart}
+                                decrementProductCart={decrementProductCart}
+                                deleteFullProductCart={deleteFullProductCart}
+                                quantity={cartProduct.quantity}
+                            />
+                        ) : (
+                            <ButtonAddProductCart
+                                addNewProductToCart={addNewProductToCart}
+                            />
+                        )}
+                    </div>
+                </Link>
+            </li>
+        </>
     );
 });
 

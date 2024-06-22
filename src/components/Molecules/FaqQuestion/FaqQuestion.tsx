@@ -24,12 +24,13 @@ const FaqQuestion = memo(({ faq }: { faq: IFaq }) => {
                 <button
                     className={styles.faqQuestion__btnLi}
                     onClick={toggleAnswer}
+                    aria-label="open or close answer"
                 >
                     <div className={styles.faqQuestion__container}>
                         <p className={styles.faqQuestion__question}>
                             {question}
                         </p>
-                        <button
+                        <div
                             className={`${styles.faqQuestion__btn} ${
                                 isHidden ? "" : styles.faqQuestion__btn_open
                             }`}
@@ -49,7 +50,7 @@ const FaqQuestion = memo(({ faq }: { faq: IFaq }) => {
                                     strokeWidth="2"
                                 />
                             </svg>
-                        </button>
+                        </div>
                     </div>
                     <p
                         className={`${styles.faqQuestion__answer} ${
