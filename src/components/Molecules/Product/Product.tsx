@@ -85,9 +85,9 @@ const Product = memo(({ product }: { product: IProduct }) => {
                     </div>
                     <div className={styles.product__footer}>
                         <div className={styles.product__info}>
-                            <h1 className={styles.product__name}>
+                            <p className={styles.product__name}>
                                 {product.title}
-                            </h1>
+                            </p>
                             <p className={styles.product__price}>
                                 {product.price} $
                             </p>

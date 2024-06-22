@@ -21,8 +21,8 @@ interface LogInProps {
 const LogIn = memo(({ setLoggedIn }: LogInProps) => {
     const navigate = useNavigate();
     const [user, setUser] = useState({
-        login: "emilys",
-        password: "emilyspass",
+        login: "",
+        password: "",
     });
 
     const handleInput = useCallback((event: ChangeEvent<HTMLInputElement>) => {
@@ -37,8 +37,6 @@ const LogIn = memo(({ setLoggedIn }: LogInProps) => {
         try {
             const loggedInUser: IUser = await api.logIn(user);
             localStorage.setItem("token", loggedInUser.token);
-            // localStorage.setItem("id", String(loggedInUser.id));
-
             setLoggedIn(true);
             navigate("/", { replace: true });
         } catch (error) {
