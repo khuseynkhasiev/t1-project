@@ -13,9 +13,11 @@ function Products() {
         data: initialData,
         isLoading: isInitialLoading,
         isError,
+        refetch,
     } = useGetProductsQuery(limitProducts);
     const [products, setProducts] = useState<IProduct[]>([]);
     const [isSearchLoading, setIsSearchLoading] = useState<boolean>(false);
+    const [isLoadMoreLoading, setIsLoadMoreLoading] = useState<boolean>(false);
 
     useEffect(() => {
         if (initialData?.products) {
@@ -28,11 +30,19 @@ function Products() {
     };
 
     const handleShowMoreProducts = (): void => {
+        setIsLoadMoreLoading(true);
         setLimitProducts((prevLimit) => prevLimit + 9);
     };
 
+    useEffect(() => {
+        if (limitProducts > 9) {
+            refetch().then(() => setIsLoadMoreLoading(false));
+        }
+    }, [limitProducts, refetch]);
+
     const totalProducts = initialData?.total ?? 0;
     const isAllProductsLoaded = totalProducts <= products.length;
+
     return (
         <>
             <Search
@@ -51,14 +61,18 @@ function Products() {
                             <Product product={product} key={product.id} />
                         ))}
                     </ul>
-                    {!isAllProductsLoaded && (
-                        <div className={styles.products__containerBtn}>
-                            <ButtonAction
-                                tag="button"
-                                text="Show more"
-                                handleClickButton={handleShowMoreProducts}
-                            />
-                        </div>
+                    {isLoadMoreLoading ? (
+                        <Loading />
+                    ) : (
+                        !isAllProductsLoaded && (
+                            <div className={styles.products__containerBtn}>
+                                <ButtonAction
+                                    tag="button"
+                                    text="Show more"
+                                    handleClickButton={handleShowMoreProducts}
+                                />
+                            </div>
+                        )
                     )}
                 </>
             )}
