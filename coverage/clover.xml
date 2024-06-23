@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1719145908793" clover="3.2.0">
-  <project timestamp="1719145908793" name="All files">
-    <metrics statements="661" coveredstatements="55" conditionals="104" coveredconditionals="8" methods="165" coveredmethods="14" elements="930" coveredelements="77" complexity="0" loc="661" ncloc="661" packages="41" files="57" classes="57"/>
+<coverage generated="1719157813453" clover="3.2.0">
+  <project timestamp="1719157813453" name="All files">
+    <metrics statements="660" coveredstatements="55" conditionals="108" coveredconditionals="8" methods="163" coveredmethods="14" elements="931" coveredelements="77" complexity="0" loc="660" ncloc="660" packages="41" files="57" classes="57"/>
     <package name="src">
       <metrics statements="29" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="App.tsx" path="/Users/hus/projects/t1-project/src/App.tsx">
@@ -56,25 +56,22 @@
       </file>
     </package>
     <package name="src.api">
-      <metrics statements="16" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <metrics statements="13" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="api.ts" path="/Users/hus/projects/t1-project/src/api/api.ts">
-        <metrics statements="16" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <metrics statements="13" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Atoms.ButtonAction">
@@ -614,9 +611,9 @@
       </file>
     </package>
     <package name="src.components.Organisms.Products">
-      <metrics statements="21" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <metrics statements="23" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="6" coveredmethods="0"/>
       <file name="Products.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/Products/Products.tsx">
-        <metrics statements="21" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="23" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -635,9 +632,11 @@
         <line num="27" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Pages.Home">

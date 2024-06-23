@@ -28,9 +28,11 @@ function Products() {
     };
 
     const handleShowMoreProducts = (): void => {
-        setLimitProducts((prevLimit) => prevLimit + 999);
+        setLimitProducts((prevLimit) => prevLimit + 9);
     };
 
+    const totalProducts = initialData?.total ?? 0;
+    const isAllProductsLoaded = totalProducts <= products.length;
     return (
         <>
             <Search
@@ -49,13 +51,15 @@ function Products() {
                             <Product product={product} key={product.id} />
                         ))}
                     </ul>
-                    <div className={styles.products__containerBtn}>
-                        <ButtonAction
-                            tag="button"
-                            text="Show more"
-                            handleClickButton={handleShowMoreProducts}
-                        />
-                    </div>
+                    {!isAllProductsLoaded && (
+                        <div className={styles.products__containerBtn}>
+                            <ButtonAction
+                                tag="button"
+                                text="Show more"
+                                handleClickButton={handleShowMoreProducts}
+                            />
+                        </div>
+                    )}
                 </>
             )}
         </>

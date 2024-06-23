@@ -4,7 +4,6 @@ const BASE_URL = "https://dummyjson.com";
 
 const checkResponse = (res: Response) => {
     return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`);
-    // return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.statusText}`);
 };
 
 const logIn = ({
@@ -45,10 +44,4 @@ const updateCart = (cart: any, id: number) => {
     }).then((res) => checkResponse(res));
 };
 
-const deleteCart = () => {
-    return fetch(`${BASE_URL}/carts/1`, {
-        method: "DELETE",
-    }).then((res) => checkResponse(res));
-};
-
-export { logIn, getActiveUser, updateCart, deleteCart };
+export { logIn, getActiveUser, updateCart };
