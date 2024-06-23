@@ -28,7 +28,7 @@ function Products() {
     };
 
     const handleShowMoreProducts = (): void => {
-        setLimitProducts((prevLimit) => prevLimit + 9);
+        setLimitProducts((prevLimit) => prevLimit + 999);
     };
 
     return (

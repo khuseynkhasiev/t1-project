@@ -30,7 +30,7 @@ const Nav = memo(({ loggedIn }: NavProps) => {
                                 <p className={styles.nav__textCart}>Cart</p>
                                 <div className={styles.nav__cartIcon}>
                                     {!cart.isDeleted &&
-                                        Boolean(cart.totalProducts) && (
+                                        Boolean(cart.totalQuantity) && (
                                             <div
                                                 className={
                                                     styles.nav__cartCount
@@ -41,7 +41,7 @@ const Nav = memo(({ loggedIn }: NavProps) => {
                                                         styles.nav__count
                                                     }
                                                 >
-                                                    {cart.totalProducts}
+                                                    {cart.totalQuantity}
                                                 </p>
                                             </div>
                                         )}
