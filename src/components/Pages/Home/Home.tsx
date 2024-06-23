@@ -19,7 +19,7 @@ function Home({ setLoggedIn }: HomeProps) {
     const [isLoading, setIsLoading] = useState(true);
     const [userId, setUserId] = useState<number | null>(null);
 
-    const { data, isError } = useGetCartQuery(userId!, {
+    const { isError } = useGetCartQuery(userId!, {
         skip: userId === null,
     });
 

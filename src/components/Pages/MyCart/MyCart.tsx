@@ -19,11 +19,11 @@ function MyCart({ setLoggedIn }: MyCartProps) {
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(true);
     const [userId, setUserId] = useState<number | null>(null);
-    const [isDeleted, setIsDeleted] = useState(
+    const [isDeleted] = useState(
         cart.isDeleted === undefined ? false : cart.isDeleted
     );
 
-    const { data, isError } = useGetCartQuery(userId!, {
+    const { isError } = useGetCartQuery(userId!, {
         skip: userId === null,
     });
 
@@ -76,7 +76,7 @@ function MyCart({ setLoggedIn }: MyCartProps) {
                             <p>Cart empty</p>
                         ) : (
                             <>
-                                <CartProducts setIsDeleted={setIsDeleted} />
+                                <CartProducts />
                                 <CartPrice
                                     totalPrice={cart.total}
                                     discountPrice={cart.discountedTotal}

@@ -16,14 +16,14 @@ export const cartProductsSlice = createSlice({
     name: "cartProducts",
     initialState: cartState,
     reducers: {
-        updateCart: (state, action: PayloadAction<ICart>) => {
+        updateCart: (_, action: PayloadAction<ICart>) => {
             return action.payload;
         },
     },
     extraReducers: (builder) => {
         builder.addMatcher(
             cartsApi.endpoints.getCart.matchFulfilled,
-            (state, action: PayloadAction<ICart>) => {
+            (_, action: PayloadAction<ICart>) => {
                 const sortedProducts = action.payload.products;
                 return {
                     ...action.payload,
