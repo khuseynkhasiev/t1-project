@@ -45,6 +45,7 @@ function App() {
                         loggedIn={loggedIn}
                         component={OneProduct}
                         checkingToken={checkingToken}
+                        setLoggedIn={setLoggedIn}
                     />
                 }
             />

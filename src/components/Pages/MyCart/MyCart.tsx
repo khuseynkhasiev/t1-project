@@ -8,6 +8,7 @@ import MainTemplate from "../../Templates/MainTemplate/MainTemplate";
 import { useEffect, SetStateAction, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as api from "../../../api/api";
+import Loading from "../../Atoms/Loading/Loading";
 
 interface MyCartProps {
     setLoggedIn: React.Dispatch<SetStateAction<boolean>>;
@@ -48,21 +49,30 @@ function MyCart({ setLoggedIn }: MyCartProps) {
 
     if (isLoading) {
         return (
-            <section className={styles.mycart}>
-                <div className={styles.mycart__container}>
-                    <h1>Loading...</h1>
-                </div>
-            </section>
+            <MainTemplate>
+                <section className={styles.mycart}>
+                    <div className={styles.mycart__container}>
+                        <h1 className={styles.mycart__title}>My cart</h1>
+                        <div className={styles.mycart__infoContainer}>
+                            <Loading />
+                        </div>
+                    </div>
+                </section>
+            </MainTemplate>
         );
     }
     if (isError) {
-        console.error("Error loading");
         return (
-            <section className={styles.mycart}>
-                <div className={styles.mycart__container}>
-                    <h1>Error loading</h1>
-                </div>
-            </section>
+            <MainTemplate>
+                <section className={styles.mycart}>
+                    <div className={styles.mycart__container}>
+                        <h1 className={styles.mycart__title}>My cart</h1>
+                        <div className={styles.mycart__infoContainer}>
+                            <p>Error loading cart...</p>
+                        </div>
+                    </div>
+                </section>
+            </MainTemplate>
         );
     }
 

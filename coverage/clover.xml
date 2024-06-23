@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1719131667022" clover="3.2.0">
-  <project timestamp="1719131667022" name="All files">
-    <metrics statements="605" coveredstatements="57" conditionals="90" coveredconditionals="8" methods="146" coveredmethods="15" elements="841" coveredelements="80" complexity="0" loc="605" ncloc="605" packages="41" files="58" classes="58"/>
+<coverage generated="1719145908793" clover="3.2.0">
+  <project timestamp="1719145908793" name="All files">
+    <metrics statements="661" coveredstatements="55" conditionals="104" coveredconditionals="8" methods="165" coveredmethods="14" elements="930" coveredelements="77" complexity="0" loc="661" ncloc="661" packages="41" files="57" classes="57"/>
     <package name="src">
-      <metrics statements="31" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="1"/>
-      <file name="App.tsx" path="/Users/hus/t1-project/src/App.tsx">
+      <metrics statements="29" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="App.tsx" path="/Users/hus/projects/t1-project/src/App.tsx">
         <metrics statements="20" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -25,9 +25,9 @@
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
       </file>
-      <file name="main.tsx" path="/Users/hus/t1-project/src/main.tsx">
+      <file name="main.tsx" path="/Users/hus/projects/t1-project/src/main.tsx">
         <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -39,18 +39,13 @@
         <line num="8" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="sum.ts" path="/Users/hus/t1-project/src/sum.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-      </file>
-      <file name="vite-env.d.ts" path="/Users/hus/t1-project/src/vite-env.d.ts">
+      <file name="vite-env.d.ts" path="/Users/hus/projects/t1-project/src/vite-env.d.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.HOCs.ProtectedRoute">
       <metrics statements="6" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="ProtectedRoute.tsx" path="/Users/hus/t1-project/src/HOCs/ProtectedRoute/ProtectedRoute.tsx">
+      <file name="ProtectedRoute.tsx" path="/Users/hus/projects/t1-project/src/HOCs/ProtectedRoute/ProtectedRoute.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
@@ -62,7 +57,7 @@
     </package>
     <package name="src.api">
       <metrics statements="16" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="0"/>
-      <file name="api.ts" path="/Users/hus/t1-project/src/api/api.ts">
+      <file name="api.ts" path="/Users/hus/projects/t1-project/src/api/api.ts">
         <metrics statements="16" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -84,7 +79,7 @@
     </package>
     <package name="src.components.Atoms.ButtonAction">
       <metrics statements="19" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="1"/>
-      <file name="ButtonAction.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/ButtonAction/ButtonAction.stories.tsx">
+      <file name="ButtonAction.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/ButtonAction/ButtonAction.stories.tsx">
         <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -95,7 +90,7 @@
         <line num="30" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
       </file>
-      <file name="ButtonAction.tsx" path="/Users/hus/t1-project/src/components/Atoms/ButtonAction/ButtonAction.tsx">
+      <file name="ButtonAction.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/ButtonAction/ButtonAction.tsx">
         <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -112,7 +107,7 @@
     </package>
     <package name="src.components.Atoms.ButtonAddProductCart">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="ButtonAddProductCart.tsx" path="/Users/hus/t1-project/src/components/Atoms/ButtonAddProductCart/ButtonAddProductCart.tsx">
+      <file name="ButtonAddProductCart.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/ButtonAddProductCart/ButtonAddProductCart.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -125,7 +120,7 @@
     </package>
     <package name="src.components.Atoms.CartChangeError">
       <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="CartChangeError.tsx" path="/Users/hus/t1-project/src/components/Atoms/CartChangeError/CartChangeError.tsx">
+      <file name="CartChangeError.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/CartChangeError/CartChangeError.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -135,14 +130,14 @@
     </package>
     <package name="src.components.Atoms.CartCountButton">
       <metrics statements="24" coveredstatements="18" conditionals="5" coveredconditionals="4" methods="7" coveredmethods="6"/>
-      <file name="CartCountButton.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/CartCountButton/CartCountButton.stories.tsx">
+      <file name="CartCountButton.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/CartCountButton/CartCountButton.stories.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="CartCountButton.tsx" path="/Users/hus/t1-project/src/components/Atoms/CartCountButton/CartCountButton.tsx">
+      <file name="CartCountButton.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/CartCountButton/CartCountButton.tsx">
         <metrics statements="20" coveredstatements="18" conditionals="5" coveredconditionals="4" methods="7" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -168,14 +163,14 @@
     </package>
     <package name="src.components.Atoms.CartPrice">
       <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="CartPrice.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/CartPrice/CartPrice.stories.tsx">
+      <file name="CartPrice.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/CartPrice/CartPrice.stories.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="CartPrice.tsx" path="/Users/hus/t1-project/src/components/Atoms/CartPrice/CartPrice.tsx">
+      <file name="CartPrice.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/CartPrice/CartPrice.tsx">
         <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -186,7 +181,7 @@
     </package>
     <package name="src.components.Atoms.CartProductLink">
       <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="CartProductLink.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/CartProductLink/CartProductLink.stories.tsx">
+      <file name="CartProductLink.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/CartProductLink/CartProductLink.stories.tsx">
         <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -196,7 +191,7 @@
         <line num="28" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
       </file>
-      <file name="CartProductLink.tsx" path="/Users/hus/t1-project/src/components/Atoms/CartProductLink/CartProductLink.tsx">
+      <file name="CartProductLink.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/CartProductLink/CartProductLink.tsx">
         <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -209,14 +204,14 @@
     </package>
     <package name="src.components.Atoms.DeleteProductCart">
       <metrics statements="10" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="DeleteProductCart.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/DeleteProductCart/DeleteProductCart.stories.tsx">
+      <file name="DeleteProductCart.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/DeleteProductCart/DeleteProductCart.stories.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="DeleteProductCart.tsx" path="/Users/hus/t1-project/src/components/Atoms/DeleteProductCart/DeleteProductCart.tsx">
+      <file name="DeleteProductCart.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/DeleteProductCart/DeleteProductCart.tsx">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -228,7 +223,7 @@
     </package>
     <package name="src.components.Atoms.Input">
       <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="Input.tsx" path="/Users/hus/t1-project/src/components/Atoms/Input/Input.tsx">
+      <file name="Input.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/Input/Input.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -240,14 +235,14 @@
     </package>
     <package name="src.components.Atoms.LineWidth">
       <metrics statements="9" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="LineWidth.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/LineWidth/LineWidth.stories.tsx">
+      <file name="LineWidth.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/LineWidth/LineWidth.stories.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="LineWidth.tsx" path="/Users/hus/t1-project/src/components/Atoms/LineWidth/LineWidth.tsx">
+      <file name="LineWidth.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/LineWidth/LineWidth.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -258,14 +253,14 @@
     </package>
     <package name="src.components.Atoms.Loading">
       <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="Loading.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/Loading/Loading.stories.tsx">
+      <file name="Loading.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/Loading/Loading.stories.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="Loading.tsx" path="/Users/hus/t1-project/src/components/Atoms/Loading/Loading.tsx">
+      <file name="Loading.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/Loading/Loading.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -275,7 +270,7 @@
     </package>
     <package name="src.components.Atoms.LogoLink">
       <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="LogoLink.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/LogoLink/LogoLink.stories.tsx">
+      <file name="LogoLink.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/LogoLink/LogoLink.stories.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -284,7 +279,7 @@
         <line num="18" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
       </file>
-      <file name="LogoLink.tsx" path="/Users/hus/t1-project/src/components/Atoms/LogoLink/LogoLink.tsx">
+      <file name="LogoLink.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/LogoLink/LogoLink.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -294,7 +289,7 @@
     </package>
     <package name="src.components.Atoms.ProductRating">
       <metrics statements="16" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="ProductRating.stories.tsx" path="/Users/hus/t1-project/src/components/Atoms/ProductRating/ProductRating.stories.tsx">
+      <file name="ProductRating.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/ProductRating/ProductRating.stories.tsx">
         <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -305,7 +300,7 @@
         <line num="26" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
       </file>
-      <file name="ProductRating.tsx" path="/Users/hus/t1-project/src/components/Atoms/ProductRating/ProductRating.tsx">
+      <file name="ProductRating.tsx" path="/Users/hus/projects/t1-project/src/components/Atoms/ProductRating/ProductRating.tsx">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -319,7 +314,7 @@
     </package>
     <package name="src.components.Molecules.CartProduct">
       <metrics statements="51" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="14" coveredmethods="0"/>
-      <file name="CartProduct.stories.tsx" path="/Users/hus/t1-project/src/components/Molecules/CartProduct/CartProduct.stories.tsx">
+      <file name="CartProduct.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/CartProduct/CartProduct.stories.tsx">
         <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -331,7 +326,7 @@
         <line num="45" count="0" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
       </file>
-      <file name="CartProduct.tsx" path="/Users/hus/t1-project/src/components/Molecules/CartProduct/CartProduct.tsx">
+      <file name="CartProduct.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/CartProduct/CartProduct.tsx">
         <metrics statements="42" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="13" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -379,7 +374,7 @@
     </package>
     <package name="src.components.Molecules.FaqQuestion">
       <metrics statements="18" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="FaqQuestion.stories.tsx" path="/Users/hus/t1-project/src/components/Molecules/FaqQuestion/FaqQuestion.stories.tsx">
+      <file name="FaqQuestion.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/FaqQuestion/FaqQuestion.stories.tsx">
         <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -387,7 +382,7 @@
         <line num="14" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
       </file>
-      <file name="FaqQuestion.tsx" path="/Users/hus/t1-project/src/components/Molecules/FaqQuestion/FaqQuestion.tsx">
+      <file name="FaqQuestion.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/FaqQuestion/FaqQuestion.tsx">
         <metrics statements="13" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -406,7 +401,7 @@
     </package>
     <package name="src.components.Molecules.Nav">
       <metrics statements="17" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="Nav.stories.tsx" path="/Users/hus/t1-project/src/components/Molecules/Nav/Nav.stories.tsx">
+      <file name="Nav.stories.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/Nav/Nav.stories.tsx">
         <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -417,7 +412,7 @@
         <line num="22" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
       </file>
-      <file name="Nav.tsx" path="/Users/hus/t1-project/src/components/Molecules/Nav/Nav.tsx">
+      <file name="Nav.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/Nav/Nav.tsx">
         <metrics statements="9" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -432,7 +427,7 @@
     </package>
     <package name="src.components.Molecules.OneProductSlider">
       <metrics statements="14" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="OneProductSlider.tsx" path="/Users/hus/t1-project/src/components/Molecules/OneProductSlider/OneProductSlider.tsx">
+      <file name="OneProductSlider.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/OneProductSlider/OneProductSlider.tsx">
         <metrics statements="14" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -452,7 +447,7 @@
     </package>
     <package name="src.components.Molecules.OneProductState">
       <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="OneProductStates.tsx" path="/Users/hus/t1-project/src/components/Molecules/OneProductState/OneProductStates.tsx">
+      <file name="OneProductStates.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/OneProductState/OneProductStates.tsx">
         <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -465,7 +460,7 @@
     </package>
     <package name="src.components.Molecules.Product">
       <metrics statements="46" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="16" coveredmethods="0"/>
-      <file name="Product.tsx" path="/Users/hus/t1-project/src/components/Molecules/Product/Product.tsx">
+      <file name="Product.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/Product/Product.tsx">
         <metrics statements="46" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="16" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -517,7 +512,7 @@
     </package>
     <package name="src.components.Molecules.Search">
       <metrics statements="20" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="Search.tsx" path="/Users/hus/t1-project/src/components/Molecules/Search/Search.tsx">
+      <file name="Search.tsx" path="/Users/hus/projects/t1-project/src/components/Molecules/Search/Search.tsx">
         <metrics statements="20" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -543,7 +538,7 @@
     </package>
     <package name="src.components.Organisms.CartProducts">
       <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="CartProducts.tsx" path="/Users/hus/t1-project/src/components/Organisms/CartProducts/CartProducts.tsx">
+      <file name="CartProducts.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/CartProducts/CartProducts.tsx">
         <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -556,7 +551,7 @@
     </package>
     <package name="src.components.Organisms.Catalog">
       <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="Catalog.tsx" path="/Users/hus/t1-project/src/components/Organisms/Catalog/Catalog.tsx">
+      <file name="Catalog.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/Catalog/Catalog.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -566,7 +561,7 @@
     </package>
     <package name="src.components.Organisms.Faq">
       <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="Faq.tsx" path="/Users/hus/t1-project/src/components/Organisms/Faq/Faq.tsx">
+      <file name="Faq.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/Faq/Faq.tsx">
         <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -579,7 +574,7 @@
     </package>
     <package name="src.components.Organisms.Footer">
       <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="Footer.tsx" path="/Users/hus/t1-project/src/components/Organisms/Footer/Footer.tsx">
+      <file name="Footer.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/Footer/Footer.tsx">
         <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -592,7 +587,7 @@
     </package>
     <package name="src.components.Organisms.Header">
       <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="Header.tsx" path="/Users/hus/t1-project/src/components/Organisms/Header/Header.tsx">
+      <file name="Header.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/Header/Header.tsx">
         <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -610,7 +605,7 @@
     </package>
     <package name="src.components.Organisms.Hero">
       <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="Hero.tsx" path="/Users/hus/t1-project/src/components/Organisms/Hero/Hero.tsx">
+      <file name="Hero.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/Hero/Hero.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -619,34 +614,35 @@
       </file>
     </package>
     <package name="src.components.Organisms.Products">
-      <metrics statements="20" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="Products.tsx" path="/Users/hus/t1-project/src/components/Organisms/Products/Products.tsx">
-        <metrics statements="20" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <metrics statements="21" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="Products.tsx" path="/Users/hus/projects/t1-project/src/components/Organisms/Products/Products.tsx">
+        <metrics statements="21" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="22" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Pages.Home">
       <metrics statements="39" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="8" coveredmethods="0"/>
-      <file name="Home.tsx" path="/Users/hus/t1-project/src/components/Pages/Home/Home.tsx">
+      <file name="Home.tsx" path="/Users/hus/projects/t1-project/src/components/Pages/Home/Home.tsx">
         <metrics statements="39" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -691,7 +687,7 @@
     </package>
     <package name="src.components.Pages.LogIn">
       <metrics statements="24" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="LogIn.tsx" path="/Users/hus/t1-project/src/components/Pages/LogIn/LogIn.tsx">
+      <file name="LogIn.tsx" path="/Users/hus/projects/t1-project/src/components/Pages/LogIn/LogIn.tsx">
         <metrics statements="24" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -721,7 +717,7 @@
     </package>
     <package name="src.components.Pages.MyCart">
       <metrics statements="35" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="7" coveredmethods="0"/>
-      <file name="MyCart.tsx" path="/Users/hus/t1-project/src/components/Pages/MyCart/MyCart.tsx">
+      <file name="MyCart.tsx" path="/Users/hus/projects/t1-project/src/components/Pages/MyCart/MyCart.tsx">
         <metrics statements="35" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -732,37 +728,37 @@
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="34" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
-        <line num="49" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="58" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="50" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="64" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Pages.NotFound">
       <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="NotFound.tsx" path="/Users/hus/t1-project/src/components/Pages/NotFound/NotFound.tsx">
+      <file name="NotFound.tsx" path="/Users/hus/projects/t1-project/src/components/Pages/NotFound/NotFound.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -771,9 +767,9 @@
       </file>
     </package>
     <package name="src.components.Pages.OneProduct">
-      <metrics statements="19" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="OneProduct.tsx" path="/Users/hus/t1-project/src/components/Pages/OneProduct/OneProduct.tsx">
-        <metrics statements="19" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="76" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="21" coveredmethods="0"/>
+      <file name="OneProduct.tsx" path="/Users/hus/projects/t1-project/src/components/Pages/OneProduct/OneProduct.tsx">
+        <metrics statements="76" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="21" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -782,22 +778,79 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="28" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="49" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
-        <line num="93" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="82" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="93" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="105" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="138" count="0" type="stmt"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="140" count="0" type="stmt"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="145" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="147" count="0" type="stmt"/>
+        <line num="150" count="0" type="stmt"/>
+        <line num="151" count="0" type="stmt"/>
+        <line num="152" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="154" count="0" type="stmt"/>
+        <line num="157" count="0" type="stmt"/>
+        <line num="158" count="0" type="stmt"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="228" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Templates.LogInTemplate">
       <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="LogInTemplate.tsx" path="/Users/hus/t1-project/src/components/Templates/LogInTemplate/LogInTemplate.tsx">
+      <file name="LogInTemplate.tsx" path="/Users/hus/projects/t1-project/src/components/Templates/LogInTemplate/LogInTemplate.tsx">
         <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -808,7 +861,7 @@
     </package>
     <package name="src.components.Templates.MainTemplate">
       <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="MainTemplate.tsx" path="/Users/hus/t1-project/src/components/Templates/MainTemplate/MainTemplate.tsx">
+      <file name="MainTemplate.tsx" path="/Users/hus/projects/t1-project/src/components/Templates/MainTemplate/MainTemplate.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -820,7 +873,7 @@
     </package>
     <package name="src.components.Templates.NotFoundTemplate">
       <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="NotFoundTemplate.tsx" path="/Users/hus/t1-project/src/components/Templates/NotFoundTemplate/NotFoundTemplate.tsx">
+      <file name="NotFoundTemplate.tsx" path="/Users/hus/projects/t1-project/src/components/Templates/NotFoundTemplate/NotFoundTemplate.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -832,7 +885,7 @@
     </package>
     <package name="src.hooks">
       <metrics statements="10" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="useDebouncedFunction.ts" path="/Users/hus/t1-project/src/hooks/useDebouncedFunction.ts">
+      <file name="useDebouncedFunction.ts" path="/Users/hus/projects/t1-project/src/hooks/useDebouncedFunction.ts">
         <metrics statements="10" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -848,12 +901,12 @@
     </package>
     <package name="src.store">
       <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="index.ts" path="/Users/hus/t1-project/src/store/index.ts">
+      <file name="index.ts" path="/Users/hus/projects/t1-project/src/store/index.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
       </file>
-      <file name="store.ts" path="/Users/hus/t1-project/src/store/store.ts">
+      <file name="store.ts" path="/Users/hus/projects/t1-project/src/store/store.ts">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -865,7 +918,7 @@
     </package>
     <package name="src.store.api">
       <metrics statements="16" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="0"/>
-      <file name="cartsApi.ts" path="/Users/hus/t1-project/src/store/api/cartsApi.ts">
+      <file name="cartsApi.ts" path="/Users/hus/projects/t1-project/src/store/api/cartsApi.ts">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -874,7 +927,7 @@
         <line num="11" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
       </file>
-      <file name="productsApi.ts" path="/Users/hus/t1-project/src/store/api/productsApi.ts">
+      <file name="productsApi.ts" path="/Users/hus/projects/t1-project/src/store/api/productsApi.ts">
         <metrics statements="10" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -890,7 +943,7 @@
     </package>
     <package name="src.store.features.cartProductsSlice">
       <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="cartProductsSlice.ts" path="/Users/hus/t1-project/src/store/features/cartProductsSlice/cartProductsSlice.ts">
+      <file name="cartProductsSlice.ts" path="/Users/hus/projects/t1-project/src/store/features/cartProductsSlice/cartProductsSlice.ts">
         <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>

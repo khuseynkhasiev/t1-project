@@ -5,6 +5,7 @@ import Search from "../../Molecules/Search/Search";
 import ButtonAction from "../../Atoms/ButtonAction/ButtonAction";
 import styles from "./Products.module.scss";
 import { useGetProductsQuery } from "../../../store";
+import Loading from "../../Atoms/Loading/Loading";
 
 function Products() {
     const [limitProducts, setLimitProducts] = useState<number>(9);
@@ -38,9 +39,9 @@ function Products() {
                 key="search-key"
             />
             {isInitialLoading || isSearchLoading ? (
-                <h1>Loading...</h1>
+                <Loading />
             ) : isError ? (
-                <h1>Error loading</h1>
+                <p>Error loading products...</p>
             ) : (
                 <>
                     <ul className={styles.products}>

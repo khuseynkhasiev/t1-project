@@ -157,7 +157,17 @@
 <a name='L92'></a><a href='#L92'>92</a>
 <a name='L93'></a><a href='#L93'>93</a>
 <a name='L94'></a><a href='#L94'>94</a>
-<a name='L95'></a><a href='#L95'>95</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -167,6 +177,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -214,9 +225,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -261,6 +281,7 @@ import { RootState } from "../../../store";
 <span class="cstat-no" title="statement not covered" >import { useEffect, SetStateAction, useState } from "react";</span>
 <span class="cstat-no" title="statement not covered" >import { useNavigate } from "react-router-dom";</span>
 <span class="cstat-no" title="statement not covered" >import * as api from "../../../api/api";</span>
+<span class="cstat-no" title="statement not covered" >import Loading from "../../Atoms/Loading/Loading";</span>
 &nbsp;
 interface MyCartProps {
     setLoggedIn: React.Dispatch&lt;SetStateAction&lt;boolean&gt;&gt;;
@@ -301,21 +322,30 @@ function <span class="fstat-no" title="function not covered" >MyCart(</span>{ se
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (isLoading) {</span>
 <span class="cstat-no" title="statement not covered" >        return (</span>
-            &lt;section className={styles.mycart}&gt;
-                &lt;div className={styles.mycart__container}&gt;
-                    &lt;h1&gt;Loading...&lt;/h1&gt;
-                &lt;/div&gt;
-            &lt;/section&gt;
+            &lt;MainTemplate&gt;
+                &lt;section className={styles.mycart}&gt;
+                    &lt;div className={styles.mycart__container}&gt;
+                        &lt;h1 className={styles.mycart__title}&gt;My cart&lt;/h1&gt;
+                        &lt;div className={styles.mycart__infoContainer}&gt;
+                            &lt;Loading /&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/MainTemplate&gt;
         );
     }
 <span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (isError) {</span>
-<span class="cstat-no" title="statement not covered" >        console.error("Error loading");</span>
 <span class="cstat-no" title="statement not covered" >        return (</span>
-            &lt;section className={styles.mycart}&gt;
-                &lt;div className={styles.mycart__container}&gt;
-                    &lt;h1&gt;Error loading&lt;/h1&gt;
-                &lt;/div&gt;
-            &lt;/section&gt;
+            &lt;MainTemplate&gt;
+                &lt;section className={styles.mycart}&gt;
+                    &lt;div className={styles.mycart__container}&gt;
+                        &lt;h1 className={styles.mycart__title}&gt;My cart&lt;/h1&gt;
+                        &lt;div className={styles.mycart__infoContainer}&gt;
+                            &lt;p&gt;Error loading cart...&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/MainTemplate&gt;
         );
     }
 &nbsp;
@@ -352,7 +382,7 @@ function <span class="fstat-no" title="function not covered" >MyCart(</span>{ se
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-06-23T08:34:26.978Z
+                at 2024-06-23T12:31:48.736Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
