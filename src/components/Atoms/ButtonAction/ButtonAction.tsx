@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./ButtonAction.module.scss";
 
 interface Props {
-    tag: string;
+    tag: "link" | "button";
     link?: string;
     text: string;
     handleClickButton?: () => void;

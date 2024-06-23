@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -98,12 +98,10 @@
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -113,30 +111,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { memo } from "react";</span>
-<span class="cstat-no" title="statement not covered" >import styles from "./ProductRating.module.scss"; </span>// Adjust the import to your actual styles file
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { memo } from "react";
+import styles from "./ProductRating.module.scss"; // Adjust the import to your actual styles file
 &nbsp;
-const starPaths = <span class="cstat-no" title="statement not covered" >[</span>
+const starPaths = [
     "M9.04894 2.92705C9.3483 2.00574 10.6517 2.00574 10.9511 2.92705L12.0206 6.21885C12.1545 6.63087 12.5385 6.90983 12.9717 6.90983H16.4329C17.4016 6.90983 17.8044 8.14945 17.0207 8.71885L14.2205 10.7533C13.87 11.0079 13.7234 11.4593 13.8572 11.8713L14.9268 15.1631C15.2261 16.0844 14.1717 16.8506 13.388 16.2812L10.5878 14.2467C10.2373 13.9921 9.7627 13.9921 9.41221 14.2467L6.61204 16.2812C5.82833 16.8506 4.77385 16.0844 5.0732 15.1631L6.14277 11.8713C6.27665 11.4593 6.12999 11.0079 5.7795 10.7533L2.97933 8.71885C2.19562 8.14945 2.59839 6.90983 3.56712 6.90983H7.02832C7.46154 6.90983 7.8455 6.63087 7.97937 6.21885L9.04894 2.92705Z",
     "M33.0489 2.92705C33.3483 2.00574 34.6517 2.00574 34.9511 2.92705L36.0206 6.21885C36.1545 6.63087 36.5385 6.90983 36.9717 6.90983H40.4329C41.4016 6.90983 41.8044 8.14945 41.0207 8.71885L38.2205 10.7533C37.87 11.0079 37.7234 11.4593 37.8572 11.8713L38.9268 15.1631C39.2261 16.0844 38.1717 16.8506 37.388 16.2812L34.5878 14.2467C34.2373 13.9921 33.7627 13.9921 33.4122 14.2467L30.612 16.2812C29.8283 16.8506 28.7739 16.0844 29.0732 15.1631L30.1428 11.8713C30.2766 11.4593 30.13 11.0079 29.7795 10.7533L26.9793 8.71885C26.1956 8.14945 26.5984 6.90983 27.5671 6.90983H31.0283C31.4615 6.90983 31.8455 6.63087 31.9794 6.21885L33.0489 2.92705Z",
     "M57.0489 2.92705C57.3483 2.00574 58.6517 2.00574 58.9511 2.92705L60.0206 6.21885C60.1545 6.63087 60.5385 6.90983 60.9717 6.90983H64.4329C65.4016 6.90983 65.8044 8.14945 65.0207 8.71885L62.2205 10.7533C61.87 11.0079 61.7234 11.4593 61.8572 11.8713L62.9268 15.1631C63.2261 16.0844 62.1717 16.8506 61.388 16.2812L58.5878 14.2467C58.2373 13.9921 57.7627 13.9921 57.4122 14.2467L54.612 16.2812C53.8283 16.8506 52.7739 16.0844 53.0732 15.1631L54.1428 11.8713C54.2766 11.4593 54.13 11.0079 53.7795 10.7533L50.9793 8.71885C50.1956 8.14945 50.5984 6.90983 51.5671 6.90983H55.0283C55.4615 6.90983 55.8455 6.63087 55.9794 6.21885L57.0489 2.92705Z",
@@ -148,10 +148,10 @@ interface IProps {
     rating: number;
 }
 &nbsp;
-const ProductRating = <span class="cstat-no" title="statement not covered" >memo(<span class="fstat-no" title="function not covered" >({</span> rating }: IProps) =&gt; {</span>
-    const pathsToRender = <span class="cstat-no" title="statement not covered" >starPaths.slice(0, Math.round(rating));</span>
+const ProductRating = memo(({ rating }: IProps) =&gt; {
+    const pathsToRender = starPaths.slice(0, Math.round(rating));
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
         &lt;svg
             className={styles.productRating}
             xmlns="http://www.w3.org/2000/svg"
@@ -160,14 +160,14 @@ const ProductRating = <span class="cstat-no" title="statement not covered" >memo
             viewBox="0 0 116 20"
             fill="none"
         &gt;
-            {pathsToRender.map(<span class="fstat-no" title="function not covered" >(p</span>ath, index) =&gt; (
-<span class="cstat-no" title="statement not covered" >                &lt;path key={index} d</span>={path} fill="#F14F4F" /&gt;
+            {pathsToRender.map((path, index) =&gt; (
+                &lt;path key={index} d={path} fill="#F14F4F" /&gt;
             ))}
         &lt;/svg&gt;
     );
 });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export default ProductRating;</span>
+export default ProductRating;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -175,7 +175,7 @@ const ProductRating = <span class="cstat-no" title="statement not covered" >memo
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-06-23T07:39:40.681Z
+                at 2024-06-23T08:34:26.978Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
