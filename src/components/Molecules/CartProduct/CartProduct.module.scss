@@ -1,0 +1,17 @@
+@import "../../../global";
+
+.cartProduct {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    column-gap: 16px;
+    @media screen and (max-width: 767px) {
+        height: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+}

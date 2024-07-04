@@ -1,0 +1,38 @@
+.oneProductSlider {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20.46px;
+    @media screen and (max-width: 1023px) {
+        margin: auto;
+        align-items: center;
+    }
+    &__imgsContainer {
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 10px;
+        }
+    }
+    &__imgTitle {
+        width: 520px;
+        object-fit: contain;
+        @media screen and (max-width: 767px) {
+            width: 280px;
+        }
+    }
+    &__imgMini {
+        border-radius: 4px;
+        width: 70px;
+        height: 75.71px;
+        object-fit: contain;
+        cursor: pointer;
+        &_active {
+            border: 3px solid #c4c4c4;
+            background: url(<path-to-image>) lightgray 0px -16.494px / 100% 143.571%
+                no-repeat;
+        }
+    }
+}

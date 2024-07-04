@@ -1,0 +1,22 @@
+@import "../../../global";
+.catalog {
+    padding: 54px 20px 60px 20px;
+    margin: auto;
+    @media screen and (max-width: 767px) {
+        padding: 20px 10px;
+    }
+    &__container {
+        max-width: 1180px;
+        width: 100%;
+        margin: auto;
+    }
+    &__title {
+        color: $color-text-catalog;
+        font-family: Jost;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 43px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}

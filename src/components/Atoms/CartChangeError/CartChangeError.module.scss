@@ -1,0 +1,15 @@
+.CartChangeError {
+    position: fixed;
+    top: 0;
+    // padding: 20px;
+    background-color: red;
+    width: 100%;
+    &__message {
+        color: white;
+        font-size: 20px;
+        font-style: normal;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+}
